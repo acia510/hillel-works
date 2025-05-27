@@ -1,3 +1,25 @@
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('fonts/CeraPro-Regular.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('fonts/CeraPro-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('fonts/CeraPro-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,14 +27,15 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Cera Pro', sans-serif;
     background: #fafafa;
 }
+
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px 15px;
+    padding: 30px 15px;
 }
 
 .navbar {
@@ -28,6 +51,7 @@ body {
 }
 
 .brand {
+
     display: inline-block;
     font-weight: bold;
     font-size: 20px;
@@ -53,18 +77,21 @@ nav ul li {
 }
 
 nav ul li a {
+
     text-decoration: none;
     font-size: 16px;
     color: #333;
 }
 
 nav ul li a.active {
+
     font-weight: bold;
     border-bottom: 3px solid #4CAF50;
     padding-bottom: 5px;
 }
 
 .login-btn {
+
     display: inline-block;
     background-color: #4CAF50;
     color: #fff;
@@ -90,6 +117,7 @@ nav ul li a.active {
 }
 
 .hero-text h4 {
+
     letter-spacing: 2px;
     color: #333;
     margin-bottom: 10px;
@@ -97,6 +125,7 @@ nav ul li a.active {
 }
 
 .hero-text h1 {
+
     font-size: 48px;
     font-weight: 900;
     line-height: 1.2;
@@ -110,6 +139,7 @@ nav ul li a.active {
 }
 
 .hero-text p {
+
     font-size: 16px;
     color: #555;
     margin-bottom: 30px;
@@ -117,6 +147,7 @@ nav ul li a.active {
 }
 
 .hero-text a {
+
     display: inline-block;
     background-color: #4CAF50;
     color: #fff;
@@ -130,4 +161,161 @@ nav ul li a.active {
 .hero-image {
     /* width: 400px; */
     height: 450px;
+}
+
+
+/* ///////-7-////// */
+
+
+.sidebar {
+    width: 310px;
+    float: left;
+    height: 774px;
+    background: #FBFBFB;
+    padding: 15px 15px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar-title {
+
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #3D3D3D;
+
+}
+
+.sidebar-list {
+    padding-left: 12px;
+}
+
+.sidebar li {
+
+    margin-bottom: 26px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.sidebar li.active {
+
+    color: #46A358;
+    font-weight: bold;
+}
+
+.main {
+    flex: 1;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.tabs {
+    display: flex;
+    gap: 20px;
+}
+
+.tabs div {
+
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.tabs .active {
+
+    color: #46A358;
+    font-weight: bold;
+}
+
+.sort {
+
+    font-size: 14px;
+    color: #3D3D3D;
+}
+
+.wrapper {
+    display: flex;
+    gap: 40px;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.grid-row {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.product {
+    width: 258px;
+    float: left;
+    text-align: center;
+}
+
+.product img {
+    width: 258px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.product-title {
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #3D3D3D;
+    margin: 12px 0 6px;
+}
+
+.product-price {
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 16px;
+    color: #46A358;
+}
+
+.promo {
+    width: 310px;
+    margin-top: 30px;
+}
+
+.promo img {
+    width: 310px;
+
+}
+
+.pagination {
+    margin-top: 40px;
+    display: flex;
+    gap: 10px;
+    float: right;
+}
+
+.pagination button {
+
+    width: 30px;
+    height: 30px;
+    border: 1px solid #E0E0E0;
+    background: #fff;
+    color: #3D3D3D;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.pagination .active {
+    background: #46A358;
+    color: #fff;
+    border: none;
 }
