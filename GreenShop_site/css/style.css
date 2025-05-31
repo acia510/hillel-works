@@ -35,24 +35,23 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 30px 15px;
 }
 
 .navbar {
+    display: flex;
+    justify-content: space-between;
     text-align: center;
-    margin-bottom: 40px;
+    margin: 40px 0 40px;
+
 }
 
 .logo {
-    display: inline-block;
     height: 35px;
     vertical-align: middle;
     margin-right: 10px;
 }
 
 .brand {
-
-    display: inline-block;
     font-weight: bold;
     font-size: 20px;
     color: #4CAF50;
@@ -61,7 +60,6 @@ body {
 }
 
 nav {
-    display: inline-block;
     vertical-align: middle;
 }
 
@@ -69,10 +67,10 @@ nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
 }
 
 nav ul li {
-    display: inline-block;
     margin: 0 15px;
 }
 
@@ -91,8 +89,6 @@ nav ul li a.active {
 }
 
 .login-btn {
-
-    display: inline-block;
     background-color: #4CAF50;
     color: #fff;
     padding: 10px 20px;
@@ -239,6 +235,10 @@ nav ul li a.active {
     color: #3D3D3D;
 }
 
+.block-products {
+    padding-top: 40px;
+}
+
 .wrapper {
     display: flex;
     gap: 40px;
@@ -318,4 +318,149 @@ nav ul li a.active {
     background: #46A358;
     color: #fff;
     border: none;
+}
+
+/* /////////// */
+.block-cards {
+    padding-top: 100px;
+}
+
+.container-card {
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: #FBFBFB;
+    flex: 1 1 45%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    /* gap: 20px; */
+}
+
+.image-card {
+    width: 292px;
+    height: auto;
+    mix-blend-mode: multiply;
+}
+
+.card-content {
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333333;
+    text-transform: uppercase;
+}
+
+.card-text {
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 20px;
+    line-height: 24px;
+}
+
+.find-more {
+    display: inline-block;
+    padding: 16px 24px;
+    background-color: #46A358;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+
+/* /////////// */
+
+.block-blog {
+    padding-top: 140px;
+}
+
+.blog-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.blog-main_title {
+    font-size: 30px;
+    margin: 0;
+    color: #333333;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.blog-header p {
+    font-size: 14px;
+    color: #666666;
+    padding-bottom: 35px;
+}
+
+.blog-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.blog-card {
+    width: 268px;
+    background-color: #FBFBFB;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.blog-date {
+    font-size: 14px;
+    color: #46A358;
+    margin-bottom: 10px;
+}
+
+.blog-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.blog_card-text {
+    padding: 15px 10px;
+}
+
+.blog-text {
+    font-size: 14px;
+    line-height: 18px;
+    color: #666666;
+    margin-bottom: 15px;
+}
+
+.read-more {
+    font-size: 14px;
+    font-weight: 500;
+    color: #3D3D3D;
+    text-decoration: none;
+    align-self: flex-start;
+}
+
+.read-more:hover {
+    color: #46A358;
+}
+
+
+
+
+.footer {
+    padding-top: 100px;
 }
