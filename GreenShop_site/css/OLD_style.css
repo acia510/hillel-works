@@ -260,62 +260,11 @@ nav ul li a.active {
     width: 258px;
     float: left;
     text-align: center;
-    position: relative;
-    overflow: hidden;
-}
-
-.product::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 2px;
-    width: 100%;
-    background-color: #46A358;
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
-    transform-origin: left;
-}
-
-.product:hover::before {
-    transform: scaleX(1);
-}
-
-.product-icons {
-    position: absolute;
-    bottom: 60px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 10px;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.product:hover .product-icons {
-    opacity: 1;
-}
-
-.product-icons img {
-    width: 35px;
-    height: 35px;
-    cursor: pointer;
-}
-
-.discount {
-    position: absolute;
-    top: 14px;
-    background-color: #46A358;
-    color: #fff;
-    padding: 5px 10px;
-    font-size: 12px;
-    font-weight: 500;
-    text-transform: uppercase;
 }
 
 .product img {
-    /* width: 258px;
-    height: 300px; */
+    width: 258px;
+    height: 300px;
     object-fit: cover;
     border-radius: 4px;
 }
@@ -330,17 +279,11 @@ nav ul li a.active {
 }
 
 .product-price {
+
     font-weight: 700;
     font-size: 18px;
     line-height: 16px;
     color: #46A358;
-}
-
-.product-price span {
-    color: #A5A5A5;
-    text-decoration: line-through;
-    font-weight: 400;
-    padding-left: 16px;
 }
 
 .promo {
