@@ -40,7 +40,6 @@ body {
 .navbar {
     display: flex;
     justify-content: space-between;
-    text-align: center;
     margin: 40px 0 40px;
 
 }
